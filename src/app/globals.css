@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css or <style> tag */
+/* globals.css or <style> tag */
+@keyframes bounceHorizontal {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(50vw) translateY(50vh);
+  }
+  50% {
+    transform: translateX(100vw) translateY(0);
+  }
+  75% {
+    transform: translateX(50vw) translateY(-50vh);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes bounceVertical {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(-50vw) translateY(50vh);
+  }
+  50% {
+    transform: translateX(-100vw) translateY(0);
+  }
+  75% {
+    transform: translateX(-50vw) translateY(-50vh);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.particle-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  animation: bounceHorizontal linear infinite, bounceVertical linear infinite;
+}
+
+.particle-0 {
+  animation-duration: 10s;
+  animation-delay: 0s;
+  transform: scale(1.2);
+}
+
+.particle-1 {
+  animation-duration: 12s;
+  animation-delay: 2s;
+  transform: scale(1.4);
+}
+
+.particle-2 {
+  animation-duration: 14s;
+  animation-delay: 4s;
+  transform: scale(0.8);
+}
+
+.particle-3 {
+  animation-duration: 16s;
+  animation-delay: 6s;
+  transform: scale(1.1);
+}
+
+.particle-4 {
+  animation-duration: 18s;
+  animation-delay: 8s;
+  transform: scale(0.9);
+}
